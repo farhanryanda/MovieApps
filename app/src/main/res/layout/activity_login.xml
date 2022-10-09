@@ -95,20 +95,14 @@
 
     <ImageButton
         android:id="@+id/btn_indo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        style="@style/localization_button"
         app:layout_constraintEnd_toStartOf="@+id/btn_usa"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/indonesia" />
 
     <ImageButton
         android:id="@+id/btn_usa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        style="@style/localization_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/usa" />
