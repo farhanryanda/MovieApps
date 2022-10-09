@@ -15,6 +15,7 @@ import com.farhanryanda.challangechapter5.viewmodel.ViewModelUser
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.util.*
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var sharedPreferences: SharedPreferences
@@ -31,6 +32,14 @@ class LoginActivity : AppCompatActivity() {
 
         binding.btnRegister.setOnClickListener {
             startActivity(Intent(this,RegisterActivity::class.java))
+        }
+
+        binding.btnIndo.setOnClickListener {
+            setLocale("in")
+        }
+
+        binding.btnUsa.setOnClickListener {
+            setLocale("en")
         }
 
         binding.btnLogin.setOnClickListener {
@@ -102,5 +111,15 @@ class LoginActivity : AppCompatActivity() {
 //                    }
 //                })
         }
+    }
+
+    private fun setLocale(lang: String) {
+        val myLocale = Locale(lang)
+        val res = resources
+        val dm = res.displayMetrics
+        val conf = res.configuration
+        conf.locale = myLocale
+        res.updateConfiguration(conf, dm)
+        startActivity(Intent(this, LoginActivity::class.java))
     }
 }

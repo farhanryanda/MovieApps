@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChallangeChapter5</string>
+    <string name="movie">Film</string>
+    <string name="tv_show">Acara TV</string>
+    <string name="entertainment_of_world">Hiburan Mancanegara</string>
+    <string name="movieapp_register">Pendaftaran MovieApp</string>
+    <string name="username">Nama Pengguna</string>
+    <string name="name">Nama</string>
+    <string name="login">Masuk</string>
+    <string name="password">Kata Sandi</string>
+    <string name="sign_up">Daftar</string>
+    <string name="repeat_password">Ulangi Password</string>
+    <string name="my_profile">Profil Saya</string>
+    <string name="age">Umur</string>
+    <string name="address">Alamat Lengkap</string>
+    <string name="update">Perbarui</string>
+    <string name="logout">Keluar</string>
+</resources>

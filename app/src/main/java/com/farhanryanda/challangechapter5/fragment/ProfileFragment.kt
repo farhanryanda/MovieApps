@@ -40,9 +40,7 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         sharedPreferences = requireActivity().applicationContext.getSharedPreferences("datauser",
             Context.MODE_PRIVATE)
-
-
-
+        
 //        binding..text = "Welcome, " + sharedPreferences.getString("username","")
         binding.btnLogout.setOnClickListener {
             alertDialog()
@@ -83,8 +81,6 @@ class ProfileFragment : Fragment() {
                 Toast.makeText(this.requireActivity(), "Update Data Success", Toast.LENGTH_SHORT).show()
             }
         })
-        sharedPreferences.edit().clear()
-        sharedPreferences.edit().apply()
     }
 
     private fun alertDialog(){

@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
-        android:text="Entertainment of World"
+        android:text="@string/entertainment_of_world"
         android:fontFamily="cursive"
         android:textColor="@color/black"
         android:textSize="15sp"
@@ -27,7 +27,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginRight="50dp"
         android:backgroundTint="@color/black"
-        android:hint="Username"
+        android:hint="@string/username"
         android:inputType="text"
         android:padding="25dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +42,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="50dp"
         android:backgroundTint="@color/black"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:padding="20dp"
         app:layout_constraintEnd_toEndOf="@+id/et_username"
@@ -55,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
-        android:text="MovieApp"
+        android:text="@string/movieapp"
         android:textColor="#E50914"
         android:textSize="55sp"
         android:textStyle="bold"
@@ -70,7 +70,7 @@
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOG IN"
+        android:text="@string/login"
         android:padding="10dp"
         android:backgroundTint="@color/black"
         android:layout_marginTop="55dp"
@@ -84,7 +84,7 @@
         android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SIGN UP"
+        android:text="@string/sign_up"
         android:padding="10dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
@@ -92,5 +92,26 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_login"
         app:layout_constraintStart_toStartOf="@+id/btn_login"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <ImageButton
+        android:id="@+id/btn_indo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_usa"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/indonesia" />
+
+    <ImageButton
+        android:id="@+id/btn_usa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usa" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

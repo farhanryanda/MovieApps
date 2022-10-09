@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
         android:padding="50dp"
-        android:text="MovieApp"
+        android:text="@string/movieapp"
         android:gravity="center"
         android:layout_marginTop="220dp"
         android:textColor="#E50914"
@@ -26,7 +26,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enterteinment of World."
+        android:text="@string/entertainment_of_world"
         android:textSize="15sp"
         android:layout_marginTop="380dp"
         android:fontFamily="cursive"

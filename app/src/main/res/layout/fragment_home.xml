@@ -24,7 +24,7 @@
                     android:background="@color/black"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:gravity="center"
-                    android:text="MOVIE APP"
+                    android:text="@string/movieapp"
                     android:textColor="#E50914"
                     android:textSize="25sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -49,7 +49,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="32dp"
-                    android:text="LIST 1"
+                    android:text="@string/movie"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_sayHello" />
 
@@ -74,7 +74,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="List 2"
+                    android:text="@string/tv_show"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.042"
                     app:layout_constraintStart_toStartOf="parent"
