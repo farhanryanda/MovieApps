@@ -8,6 +8,8 @@ import java.io.Serializable
 
 
 data class SerialResponseItem(
+    @SerializedName("id")
+    val id: Int,
     @SerializedName("original_name")
     val originalName: String,
     @SerializedName("poster_path")

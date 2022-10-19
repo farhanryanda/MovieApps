@@ -1,4 +1,4 @@
-package com.farhanryanda.challangechapter5
+package com.farhanryanda.challangechapter5.view.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,7 +7,9 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.farhanryanda.challangechapter5.databinding.ActivityRegisterBinding
 import com.farhanryanda.challangechapter5.viewmodel.ViewModelUser
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding : ActivityRegisterBinding
 
@@ -17,7 +19,7 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnLogin.setOnClickListener {
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
         }
         supportActionBar?.hide()
 
@@ -32,13 +34,12 @@ class RegisterActivity : AppCompatActivity() {
 
             if (password == repeatPassword) {
                 addUser(name,username,password,age, address)
-                startActivity(Intent(this,LoginActivity::class.java))
+                startActivity(Intent(this, LoginActivity::class.java))
             } else if (password != repeatPassword) {
                 Toast.makeText(this, "Password Tidak Sama", Toast.LENGTH_SHORT).show()
 
             }
         }
-
     }
 
     private fun addUser(name: String,

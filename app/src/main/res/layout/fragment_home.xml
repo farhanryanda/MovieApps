@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.HomeFragment">
+    tools:context=".view.fragment.HomeFragment">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -94,6 +94,16 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView4"
                     app:spanCount="5"
                     tools:listitem="@layout/item_movie" />
+
+                <ImageView
+                    android:id="@+id/btn_favorite"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_favorite_pink_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>

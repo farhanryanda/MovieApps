@@ -8,6 +8,8 @@ import java.io.Serializable
 
 
 data class ResponsePopularMovieItem(
+    @SerializedName("id")
+    val id: Int,
     @SerializedName("original_title")
     val originalTitle: String,
     @SerializedName("poster_path")

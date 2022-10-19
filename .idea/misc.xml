@@ -5,8 +5,11 @@
       <map>
         <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/drawable/bot_nav_bg.xml" value="0.111" />
         <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/drawable/change_loc.xml" value="0.245" />
+        <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/drawable/favorite_toggle.xml" value="0.245" />
         <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/drawable/gradient_bg.xml" value="0.1925" />
         <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/drawable/ic_account.xml" value="0.245" />
+        <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/drawable/ic_favorite_grey_24.xml" value="0.245" />
+        <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/drawable/ic_favorite_pink_24.xml" value="0.245" />
         <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/drawable/ic_home.xml" value="0.245" />
         <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/drawable/ic_launcher_background.xml" value="0.111" />
         <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/drawable/ic_star.xml" value="0.245" />
@@ -16,8 +19,10 @@
         <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/layout/activity_register.xml" value="0.35144927536231885" />
         <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/layout/activity_splash.xml" value="0.3484375" />
         <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/layout/fragment_detail_movie.xml" value="0.35144927536231885" />
+        <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/layout/fragment_favorite.xml" value="0.3484375" />
         <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/layout/fragment_home.xml" value="0.3484375" />
         <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/layout/fragment_profile.xml" value="0.35144927536231885" />
+        <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/layout/item_favorite.xml" value="0.35144927536231885" />
         <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/layout/item_movie.xml" value="0.35144927536231885" />
         <entry key="..\:/Binar Academy/CHAPTER 5/ChallangeChapter5/app/src/main/res/menu/menu_bottom.xml" value="0.3625" />
       </map>

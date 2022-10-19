@@ -1,19 +1,17 @@
-package com.farhanryanda.challangechapter5
+package com.farhanryanda.challangechapter5.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.farhanryanda.challangechapter5.adapter.MovieAdapter
+import com.farhanryanda.challangechapter5.R
 import com.farhanryanda.challangechapter5.databinding.ActivityMainBinding
-import com.farhanryanda.challangechapter5.model.ResponsePopularMovieItem
-import com.farhanryanda.challangechapter5.viewmodel.ViewModelPopularMovie
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
