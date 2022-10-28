@@ -107,5 +107,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/usa" />
 
+    <Button
+        android:id="@+id/btn_login_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginRight="50dp"
+        android:drawableLeft="@drawable/google_button"
+        android:padding="10dp"
+        android:background="@drawable/bg_button"
+        android:text="Login with google"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

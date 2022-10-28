@@ -25,6 +25,9 @@ class SplashActivity : AppCompatActivity() {
             "datauser",
             Context.MODE_PRIVATE
         )
+
+
+
         pref = LoginDataStoreManager(this)
         viewModelLoginPref = ViewModelProvider(this, ViewModelFactory(pref))[LoginViewModel::class.java]
         supportActionBar?.hide()

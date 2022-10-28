@@ -31,11 +31,21 @@ import com.farhanryanda.challangechapter5.R
 import com.farhanryanda.challangechapter5.databinding.FragmentProfileBinding
 import com.farhanryanda.challangechapter5.datastore.LoginDataStoreManager
 import com.farhanryanda.challangechapter5.viewmodel.*
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
 
 
 @AndroidEntryPoint
 class ProfileFragment : Fragment() {
+
+    lateinit var mGoogleSignInClient: GoogleSignInClient
+
+    private val auth by lazy {
+        FirebaseAuth.getInstance()
+    }
 
     private val REQUEST_CODE_PERMISSION = 100
     private lateinit var sharedPreferences: SharedPreferences
@@ -56,10 +66,18 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestIdToken(getString(R.string.default_web_client_id))
+            .requestEmail()
+            .build()
+        mGoogleSignInClient= GoogleSignIn.getClient(this.requireActivity(),gso)
+
         sharedPreferences = requireActivity().applicationContext.getSharedPreferences("datauser",
             Context.MODE_PRIVATE)
         pref = LoginDataStoreManager(this.requireActivity())
         binding.btnLogout.setOnClickListener {
+            mGoogleSignInClient.signOut()
             alertDialog()
         }
         getUserById()
