@@ -15,10 +15,84 @@
       },
       "oauth_client": [
         {
-          "client_id": "702726273507-bftgn08foq68cl8c0113sb6qvo7hb7v3.apps.googleusercontent.com",
+          "client_id": "702726273507-kq4fqji75hvg7k3299glrsgelqsel2sa.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.farhanryanda.challangechapter5",
+            "certificate_hash": "f66cf9d7529bee6dd817ca9cda1fe766c1ff0981"
+          }
+        },
+        {
+          "client_id": "702726273507-fr5k1h3070jpgbp8g2lao20ssf4tlg9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuoB4ks7N88XnA0L7PGzqP1RMUNQFtnWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702726273507-fr5k1h3070jpgbp8g2lao20ssf4tlg9c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702726273507:android:b2e1c41dc6922c9af9c8d6",
+        "android_client_info": {
+          "package_name": "com.farhanryanda.challangechapter5.basicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702726273507-8uffkvm77rs0rso79eqhgs2lgn4hnbj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.farhanryanda.challangechapter5.basicapp",
+            "certificate_hash": "f66cf9d7529bee6dd817ca9cda1fe766c1ff0981"
+          }
+        },
+        {
+          "client_id": "702726273507-fr5k1h3070jpgbp8g2lao20ssf4tlg9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuoB4ks7N88XnA0L7PGzqP1RMUNQFtnWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702726273507-fr5k1h3070jpgbp8g2lao20ssf4tlg9c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702726273507:android:4b40812c4608b3bff9c8d6",
+        "android_client_info": {
+          "package_name": "com.farhanryanda.challangechapter5.premiumapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702726273507-0rs63cf8u0rck75rsj22q05i379b1ief.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.farhanryanda.challangechapter5.premiumapp",
             "certificate_hash": "f66cf9d7529bee6dd817ca9cda1fe766c1ff0981"
           }
         },

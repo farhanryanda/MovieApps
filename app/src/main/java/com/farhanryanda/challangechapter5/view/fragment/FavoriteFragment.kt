@@ -7,12 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.farhanryanda.challangechapter5.R
 import com.farhanryanda.challangechapter5.databinding.FragmentFavoriteBinding
-import com.farhanryanda.challangechapter5.databinding.FragmentHomeBinding
-import com.farhanryanda.challangechapter5.model.FavoriteEntity
 import com.farhanryanda.challangechapter5.view.adapter.FavoriteAdapter
-import com.farhanryanda.challangechapter5.view.adapter.MovieAdapter
 import com.farhanryanda.challangechapter5.viewmodel.FavoriteViewModel
 
 

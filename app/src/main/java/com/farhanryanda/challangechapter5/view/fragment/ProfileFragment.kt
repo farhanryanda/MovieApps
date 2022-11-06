@@ -18,18 +18,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.activity.viewModels
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.bumptech.glide.Glide
-import com.farhanryanda.blurimagewm.workers.KEY_IMAGE_URI
 import com.farhanryanda.challangechapter5.view.activity.LoginActivity
 import com.farhanryanda.challangechapter5.R
 import com.farhanryanda.challangechapter5.databinding.FragmentProfileBinding
-import com.farhanryanda.challangechapter5.datastore.LoginDataStoreManager
 import com.farhanryanda.challangechapter5.viewmodel.*
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -49,7 +45,7 @@ class ProfileFragment : Fragment() {
 
     private val REQUEST_CODE_PERMISSION = 100
     private lateinit var sharedPreferences: SharedPreferences
-    private lateinit var pref: LoginDataStoreManager
+    private lateinit var pref: com.farhanryanda.challangechapter5.datastore.LoginDataStoreManager
     private lateinit var viewModelLoginPref: LoginViewModel
     private var _binding: FragmentProfileBinding? = null
     private val binding get() = _binding!!
@@ -75,7 +71,7 @@ class ProfileFragment : Fragment() {
 
         sharedPreferences = requireActivity().applicationContext.getSharedPreferences("datauser",
             Context.MODE_PRIVATE)
-        pref = LoginDataStoreManager(this.requireActivity())
+        pref = com.farhanryanda.challangechapter5.datastore.LoginDataStoreManager(this.requireActivity())
         binding.btnLogout.setOnClickListener {
             mGoogleSignInClient.signOut()
             alertDialog()

@@ -7,10 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
-import com.farhanryanda.challangechapter5.R
 import com.farhanryanda.challangechapter5.databinding.FragmentDetailMovieBinding
-import com.farhanryanda.challangechapter5.databinding.FragmentHomeBinding
-import com.farhanryanda.challangechapter5.model.ResponsePopularMovie
 import com.farhanryanda.challangechapter5.model.ResponsePopularMovieItem
 import com.farhanryanda.challangechapter5.model.SerialResponseItem
 import com.farhanryanda.challangechapter5.viewmodel.FavoriteViewModel

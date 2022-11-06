@@ -6,9 +6,6 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import com.farhanryanda.challangechapter5.model.FavoriteEntity
-import dagger.Module
-import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
 
 @Dao
 interface FavoriteMovieDao {

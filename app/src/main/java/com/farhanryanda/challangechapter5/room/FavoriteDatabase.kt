@@ -5,9 +5,6 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.farhanryanda.challangechapter5.model.FavoriteEntity
-import dagger.Module
-import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
 
 
 @Database(entities = [FavoriteEntity::class], version = 1,exportSchema = false)

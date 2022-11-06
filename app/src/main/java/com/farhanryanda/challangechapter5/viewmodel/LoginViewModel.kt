@@ -4,11 +4,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
-import com.farhanryanda.challangechapter5.datastore.LoginDataStoreManager
 import com.farhanryanda.challangechapter5.model.UserPreferences
 import kotlinx.coroutines.launch
 
-class LoginViewModel(private val pref: LoginDataStoreManager): ViewModel() {
+class LoginViewModel(private val pref: com.farhanryanda.challangechapter5.datastore.LoginDataStoreManager): ViewModel() {
     fun getUser(): LiveData<UserPreferences> {
         return pref.getUser().asLiveData()
     }

@@ -1,11 +1,9 @@
 package com.farhanryanda.challangechapter5.network
 
 import com.farhanryanda.challangechapter5.model.ResponsePopularMovie
-import com.farhanryanda.challangechapter5.model.ResponsePopularMovieItem
 import com.farhanryanda.challangechapter5.model.SerialResponse
 import retrofit2.Call
 import retrofit2.http.GET
-import retrofit2.http.Headers
 
 interface ApiService {
     @GET("/3/movie/popular?api_key=936f5f6c2a6d04c4cbf7d4b54e9e5657")

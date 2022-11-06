@@ -1,11 +1,7 @@
 package com.farhanryanda.challangechapter5.viewmodel
 
 import android.app.Application
-import android.content.ContentResolver
-import android.content.Context
-import android.content.Intent
 import android.net.Uri
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.work.*

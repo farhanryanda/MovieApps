@@ -3,9 +3,6 @@ package com.farhanryanda.challangechapter5.viewmodel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.room.ColumnInfo
 import com.farhanryanda.challangechapter5.model.FavoriteEntity
 import com.farhanryanda.challangechapter5.room.FavoriteDatabase
 import com.farhanryanda.challangechapter5.room.FavoriteMovieDao

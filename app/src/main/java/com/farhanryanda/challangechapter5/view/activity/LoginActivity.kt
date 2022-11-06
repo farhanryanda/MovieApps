@@ -1,8 +1,6 @@
 package com.farhanryanda.challangechapter5.view.activity
 
-import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -10,8 +8,6 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.farhanryanda.challangechapter5.R
 import com.farhanryanda.challangechapter5.databinding.ActivityLoginBinding
-import com.farhanryanda.challangechapter5.datastore.LoginDataStoreManager
-import com.farhanryanda.challangechapter5.datastore.SavedPreference
 import com.farhanryanda.challangechapter5.viewmodel.LoginViewModel
 import com.farhanryanda.challangechapter5.viewmodel.ViewModelFactory
 import com.farhanryanda.challangechapter5.viewmodel.ViewModelUser
@@ -30,7 +26,7 @@ import java.util.*
 @AndroidEntryPoint
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
-    private lateinit var pref: LoginDataStoreManager
+    private lateinit var pref: com.farhanryanda.challangechapter5.datastore.LoginDataStoreManager
     private lateinit var viewModelLoginPref: LoginViewModel
 
     lateinit var mGoogleSignInClient: GoogleSignInClient
@@ -74,7 +70,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.btnLogin.setOnClickListener {
-            pref = LoginDataStoreManager(this)
+            pref = com.farhanryanda.challangechapter5.datastore.LoginDataStoreManager(this)
             viewModelLoginPref =
                 ViewModelProvider(this, ViewModelFactory(pref))[LoginViewModel::class.java]
 
@@ -150,8 +146,8 @@ class LoginActivity : AppCompatActivity() {
         val credential= GoogleAuthProvider.getCredential(account.idToken,null)
         firebaseAuth.signInWithCredential(credential).addOnCompleteListener {task->
             if(task.isSuccessful) {
-                SavedPreference.setEmail(this,account.email.toString())
-                SavedPreference.setUsername(this,account.displayName.toString())
+                com.farhanryanda.challangechapter5.datastore.SavedPreference.setEmail(this,account.email.toString())
+                com.farhanryanda.challangechapter5.datastore.SavedPreference.setUsername(this,account.displayName.toString())
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()

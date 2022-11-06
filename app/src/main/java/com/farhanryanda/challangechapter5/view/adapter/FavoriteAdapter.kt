@@ -1,14 +1,10 @@
 package com.farhanryanda.challangechapter5.view.adapter
 
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.farhanryanda.challangechapter5.R
 import com.farhanryanda.challangechapter5.databinding.ItemFavoriteBinding
-import com.farhanryanda.challangechapter5.databinding.ItemMovieBinding
 import com.farhanryanda.challangechapter5.model.FavoriteEntity
 
 class FavoriteAdapter(var listMovie: List<FavoriteEntity>): RecyclerView.Adapter<FavoriteAdapter.ViewHolder>() {

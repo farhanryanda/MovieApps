@@ -5,7 +5,6 @@ import androidx.lifecycle.ViewModel
 import com.example.moviecolabs.model.ResponseUserItem
 import com.farhanryanda.challangechapter5.model.DataUser
 import com.farhanryanda.challangechapter5.network.RestfulUser
-import com.farhanryanda.challangechapter5.network.RetrofitUser
 import dagger.hilt.android.lifecycle.HiltViewModel
 
 import retrofit2.Call
