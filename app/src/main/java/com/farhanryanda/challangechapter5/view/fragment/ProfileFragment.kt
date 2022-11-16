@@ -1,3 +1,5 @@
+@file:Suppress("PrivatePropertyName", "unused", "unused", "unused", "unused")
+
 package com.farhanryanda.challangechapter5.view.fragment
 
 
@@ -37,7 +39,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class ProfileFragment : Fragment() {
 
-    lateinit var mGoogleSignInClient: GoogleSignInClient
+    private lateinit var mGoogleSignInClient: GoogleSignInClient
 
     private val auth by lazy {
         FirebaseAuth.getInstance()
@@ -56,8 +58,7 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
-        val view = binding.root
-        return view
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -90,7 +91,7 @@ class ProfileFragment : Fragment() {
     }
 
     private fun getUserById() {
-        val viewModel = ViewModelProvider(this).get(ViewModelUser::class.java)
+        val viewModel = ViewModelProvider(this)[ViewModelUser::class.java]
         viewModelLoginPref = ViewModelProvider(this, ViewModelFactory(pref))[LoginViewModel::class.java]
         viewModelLoginPref.getUser().observe(this.requireActivity(), {
             viewModel.getUserById(it.id)
@@ -106,19 +107,20 @@ class ProfileFragment : Fragment() {
     }
 
     private fun updateUser() {
-        var username = binding.etUsername.text.toString()
-        var password = binding.etPassword.text.toString()
-        var address = binding.etAddress.text.toString()
-        var age = binding.etAge.text.toString()
-        val viewModel = ViewModelProvider(this).get(ViewModelUser::class.java)
-        viewModelLoginPref.getUser().observe(this.requireActivity(), {
+        val username = binding.etUsername.text.toString()
+        val password = binding.etPassword.text.toString()
+        val address = binding.etAddress.text.toString()
+        val age = binding.etAge.text.toString()
+        val viewModel = ViewModelProvider(this)[ViewModelUser::class.java]
+        viewModelLoginPref.getUser().observe(this.requireActivity()) {
             viewModel.updateApiUser(it.id, it.name, username, password, age, address)
-        })
-        viewModel.updateLiveDataUser().observe(this.requireActivity(), {
-            if (it != null){
-                Toast.makeText(this.requireActivity(), "Update Data Success", Toast.LENGTH_SHORT).show()
+        }
+        viewModel.updateLiveDataUser().observe(this.requireActivity()) {
+            if (it != null) {
+                Toast.makeText(this.requireActivity(), "Update Data Success", Toast.LENGTH_SHORT)
+                    .show()
             }
-        })
+        }
     }
 
     private fun alertDialog(){

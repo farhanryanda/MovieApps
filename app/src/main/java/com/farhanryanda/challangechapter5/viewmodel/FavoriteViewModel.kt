@@ -26,12 +26,12 @@ class FavoriteViewModel(application: Application) : AndroidViewModel(application
                       voteAverage: Double,
                       overview: String ) {
         CoroutineScope(Dispatchers.IO).launch {
-            var movie = FavoriteEntity(id, originalTitle, posterPath, voteAverage, overview)
+            val movie = FavoriteEntity(id, originalTitle, posterPath, voteAverage, overview)
             favoriteDao?.insertFavorite(movie)
         }
     }
 
-    suspend fun checkUser(id: Int) = favoriteDao?.checkMovie(id)
+    fun checkUser(id: Int) = favoriteDao?.checkMovie(id)
 
     fun removeFromFavorite(id: Int,
                            originalTitle: String,
@@ -39,7 +39,7 @@ class FavoriteViewModel(application: Application) : AndroidViewModel(application
                            voteAverage: Double,
                            overview: String) {
         CoroutineScope(Dispatchers.IO).launch {
-            var movie = FavoriteEntity(id, originalTitle, posterPath, voteAverage, overview)
+            val movie = FavoriteEntity(id, originalTitle, posterPath, voteAverage, overview)
             favoriteDao?.deleteFavorite(movie)
         }
     }

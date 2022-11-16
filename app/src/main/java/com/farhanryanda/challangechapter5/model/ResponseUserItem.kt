@@ -1,4 +1,4 @@
-package com.example.moviecolabs.model
+package com.farhanryanda.challangechapter5.model
 
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable

@@ -1,3 +1,7 @@
+@file:Suppress("ReplaceGetOrSet", "ReplaceGetOrSet", "ReplaceGetOrSet", "ReplaceGetOrSet",
+    "ReplaceGetOrSet", "ReplaceGetOrSet"
+)
+
 package com.farhanryanda.challangechapter5.view.fragment
 
 import android.os.Bundle
@@ -22,10 +26,9 @@ class FavoriteFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentFavoriteBinding.inflate(inflater, container, false)
-        val view = binding.root
-        return view
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

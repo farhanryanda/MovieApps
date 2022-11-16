@@ -29,8 +29,8 @@ class RegisterActivity : AppCompatActivity() {
             val password = binding.etPassword.text.toString()
             val repeatPassword = binding.etRepeatPassword.text.toString()
 
-            var age = ""
-            var address = ""
+            val age = ""
+            val address = ""
 
             if (password == repeatPassword) {
                 addUser(name,username,password,age, address)

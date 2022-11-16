@@ -1,8 +1,7 @@
 package com.farhanryanda.challangechapter5.viewmodel
 
-import com.example.moviecolabs.model.ResponseUserItem
+import com.farhanryanda.challangechapter5.model.ResponseUserItem
 import com.farhanryanda.challangechapter5.model.DataUser
-import com.farhanryanda.challangechapter5.model.ResponsePopularMovie
 import com.farhanryanda.challangechapter5.network.RestfulUser
 import io.mockk.every
 import io.mockk.mockk

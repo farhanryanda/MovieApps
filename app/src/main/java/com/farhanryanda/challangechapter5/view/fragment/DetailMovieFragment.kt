@@ -1,3 +1,9 @@
+@file:Suppress("ReplaceGetOrSet", "ReplaceGetOrSet", "ReplaceGetOrSet", "ReplaceGetOrSet",
+    "ReplaceGetOrSet", "ReplaceGetOrSet", "ReplaceGetOrSet", "LocalVariableName",
+    "LocalVariableName", "UnnecessaryVariable", "UnnecessaryVariable", "UnnecessaryVariable",
+    "UnnecessaryVariable"
+)
+
 package com.farhanryanda.challangechapter5.view.fragment
 
 import android.os.Bundle
@@ -25,7 +31,7 @@ class DetailMovieFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentDetailMovieBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
@@ -59,7 +65,7 @@ class DetailMovieFragment : Fragment() {
 
     }
 
-    fun toggleFavorite(){
+    private fun toggleFavorite(){
         if (arguments?.getSerializable("datadetail") != null) {
             val getDetailMovie = arguments?.getSerializable("datadetail") as ResponsePopularMovieItem
             val id = getDetailMovie.id

@@ -1,8 +1,10 @@
+@file:Suppress("JoinDeclarationAndAssignment")
+
 package com.farhanryanda.challangechapter5.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.moviecolabs.model.ResponseUserItem
+import com.farhanryanda.challangechapter5.model.ResponseUserItem
 import com.farhanryanda.challangechapter5.model.DataUser
 import com.farhanryanda.challangechapter5.network.RestfulUser
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -13,7 +15,7 @@ import retrofit2.Response
 import javax.inject.Inject
 
 @HiltViewModel
-class ViewModelUser @Inject constructor(val api: RestfulUser) : ViewModel() {
+class ViewModelUser @Inject constructor(private val api: RestfulUser) : ViewModel() {
     var getLdUser : MutableLiveData<List<ResponseUserItem>?> = MutableLiveData()
     var postLDUser: MutableLiveData<ResponseUserItem?> = MutableLiveData()
     var updLDUser: MutableLiveData<ResponseUserItem>

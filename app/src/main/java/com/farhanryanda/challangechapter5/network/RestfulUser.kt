@@ -1,6 +1,6 @@
 package com.farhanryanda.challangechapter5.network
 
-import com.example.moviecolabs.model.ResponseUserItem
+import com.farhanryanda.challangechapter5.model.ResponseUserItem
 import com.farhanryanda.challangechapter5.model.DataUser
 import retrofit2.Call
 import retrofit2.http.*

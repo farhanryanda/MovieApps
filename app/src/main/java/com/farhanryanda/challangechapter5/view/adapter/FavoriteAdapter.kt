@@ -7,13 +7,11 @@ import com.bumptech.glide.Glide
 import com.farhanryanda.challangechapter5.databinding.ItemFavoriteBinding
 import com.farhanryanda.challangechapter5.model.FavoriteEntity
 
-class FavoriteAdapter(var listMovie: List<FavoriteEntity>): RecyclerView.Adapter<FavoriteAdapter.ViewHolder>() {
-    class ViewHolder(var binding: ItemFavoriteBinding): RecyclerView.ViewHolder(binding.root) {
-
-    }
+class FavoriteAdapter(private var listMovie: List<FavoriteEntity>): RecyclerView.Adapter<FavoriteAdapter.ViewHolder>() {
+    class ViewHolder(var binding: ItemFavoriteBinding): RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view = ItemFavoriteBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        val view = ItemFavoriteBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return ViewHolder(view)
     }
 

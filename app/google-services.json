@@ -97,6 +97,14 @@
           }
         },
         {
+          "client_id": "702726273507-328h4tbo99ge39fd6mu75f9uuqbh4e2r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.farhanryanda.challangechapter5.premiumapp",
+            "certificate_hash": "b8fb5343047da8577f4d14d1eab1a11c4d05debf"
+          }
+        },
+        {
           "client_id": "702726273507-fr5k1h3070jpgbp8g2lao20ssf4tlg9c.apps.googleusercontent.com",
           "client_type": 3
         }

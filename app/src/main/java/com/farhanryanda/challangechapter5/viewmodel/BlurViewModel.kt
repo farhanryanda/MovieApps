@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.work.*
 import com.farhanryanda.blurimagewm.workers.*
+import com.farhanryanda.challangechapter5.workers.KEY_IMAGE_URI
 
 class BlurViewModel(application: Application): ViewModel() {
     //  var untuk instance  WorkManager di ViewModel

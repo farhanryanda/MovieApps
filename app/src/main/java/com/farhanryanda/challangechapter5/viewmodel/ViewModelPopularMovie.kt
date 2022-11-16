@@ -26,7 +26,7 @@ class ViewModelPopularMovie: ViewModel() {
                 }
 
                 override fun onFailure(call: Call<ResponsePopularMovie>, t: Throwable) {
-                    Log.e("Movie", "onFailure: ${t.message}", )
+                    Log.e("Movie", "onFailure: ${t.message}")
                 }
 
             })
@@ -45,7 +45,7 @@ class ViewModelPopularMovie: ViewModel() {
                 }
 
                 override fun onFailure(call: Call<SerialResponse>, t: Throwable) {
-                    Log.e("TvSerial", "onFailure: ${t.message}", )
+                    Log.e("TvSerial", "onFailure: ${t.message}")
 
                 }
 

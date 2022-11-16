@@ -11,13 +11,11 @@ import com.farhanryanda.challangechapter5.databinding.ItemMovieBinding
 import com.farhanryanda.challangechapter5.model.SerialResponseItem
 
 
-class SerialAdapter (var listSerial: List<SerialResponseItem>): RecyclerView.Adapter<SerialAdapter.ViewHolder>() {
-    class ViewHolder(var binding: ItemMovieBinding): RecyclerView.ViewHolder(binding.root) {
-
-    }
+class SerialAdapter (private var listSerial: List<SerialResponseItem>): RecyclerView.Adapter<SerialAdapter.ViewHolder>() {
+    class ViewHolder(var binding: ItemMovieBinding): RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view = ItemMovieBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        val view = ItemMovieBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return ViewHolder(view)
     }
 
@@ -27,7 +25,7 @@ class SerialAdapter (var listSerial: List<SerialResponseItem>): RecyclerView.Ada
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binding.cvMovie.setOnClickListener {
-            var bundle = Bundle()
+            val bundle = Bundle()
             bundle.putSerializable("dataserial",listSerial[position])
             it.findNavController().navigate(R.id.action_homeFragment_to_detailMovieFragment, bundle)
         }

@@ -1,3 +1,8 @@
+@file:Suppress("FunctionName", "PropertyName", "PrivatePropertyName",
+    "MoveLambdaOutsideParentheses", "MoveLambdaOutsideParentheses", "MoveLambdaOutsideParentheses",
+    "MoveLambdaOutsideParentheses", "MoveLambdaOutsideParentheses"
+)
+
 package com.farhanryanda.challangechapter5.view.activity
 
 import android.content.Intent
@@ -29,8 +34,8 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var pref: com.farhanryanda.challangechapter5.datastore.LoginDataStoreManager
     private lateinit var viewModelLoginPref: LoginViewModel
 
-    lateinit var mGoogleSignInClient: GoogleSignInClient
-    val Req_Code: Int = 1
+    private lateinit var mGoogleSignInClient: GoogleSignInClient
+    private val Req_Code: Int = 1
     private lateinit var firebaseAuth: FirebaseAuth
 
 
@@ -76,7 +81,7 @@ class LoginActivity : AppCompatActivity() {
 
             val username = binding.etUsername.text.toString()
             val password = binding.etPassword.text.toString()
-            val viewModel = ViewModelProvider(this).get(ViewModelUser::class.java)
+            val viewModel = ViewModelProvider(this)[ViewModelUser::class.java]
             viewModel.callGetUser()
             viewModel.getLiveDataUser().observe(this, {
                 if (it != null) {

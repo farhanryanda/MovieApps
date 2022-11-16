@@ -1,3 +1,7 @@
+@file:Suppress("PackageDirectoryMismatch", "PackageDirectoryMismatch", "PackageDirectoryMismatch",
+    "PackageDirectoryMismatch", "PackageDirectoryMismatch"
+)
+
 package com.farhanryanda.blurimagewm.workers
 
 import android.content.Context
@@ -8,6 +12,10 @@ import android.util.Log
 import androidx.work.Worker
 import androidx.work.WorkerParameters
 import androidx.work.workDataOf
+import com.farhanryanda.challangechapter5.workers.KEY_IMAGE_URI
+import com.farhanryanda.challangechapter5.workers.blurBitmap
+import com.farhanryanda.challangechapter5.workers.makeStatusNotification
+import com.farhanryanda.challangechapter5.workers.writeBitmapToFile
 
 class BlurWorker(context: Context, param : WorkerParameters): Worker(context,param) {
     override fun doWork(): Result {

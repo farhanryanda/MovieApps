@@ -10,19 +10,17 @@ import com.farhanryanda.challangechapter5.R
 import com.farhanryanda.challangechapter5.databinding.ItemMovieBinding
 import com.farhanryanda.challangechapter5.model.ResponsePopularMovieItem
 
-class MovieAdapter(var listMovie: List<ResponsePopularMovieItem>): RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
-    class ViewHolder(var binding: ItemMovieBinding): RecyclerView.ViewHolder(binding.root) {
-
-    }
+class MovieAdapter(private var listMovie: List<ResponsePopularMovieItem>): RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
+    class ViewHolder(var binding: ItemMovieBinding): RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view =ItemMovieBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        val view =ItemMovieBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binding.cvMovie.setOnClickListener {
-            var bundle = Bundle()
+            val bundle = Bundle()
             bundle.putSerializable("datadetail",listMovie[position])
             it.findNavController().navigate(R.id.action_homeFragment_to_detailMovieFragment, bundle)
 
